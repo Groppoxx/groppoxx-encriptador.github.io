@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/6997b78774.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="leftContainer">
+
+            <div class="header">
+                <img class="logo" src="./img/logo.png">
+            </div>
+
+            <div class="inputContainer">
+                <textarea id="txtInput" placeholder="Ingrese el texto aqui"></textarea>
+
+                <div class="infoContainer">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <p>Solo letras minúsculas y sin acentos</p>
+                </div>
+
+                <div class="buttonContainer">
+                    <button id="btnEncriptar" type="button">Encriptar</button>
+                    <button id="btnDesencriptar" type="button">Desencriptar</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="outputContainer">
+            <textarea id="txtOutput" readonly></textarea>
+
+            <div class="noTextContainer" id="textContainer">
+                <img class="noText" src="./img/noText.png">
+                <p>
+                    <strong>Ningún mensaje fue encontrado</strong>
+                    <br>Ingresa el texto que desees encriptar o
+                    desencriptar.
+                </p>
+            </div>
+
+            <div class="copyBtnContainer" id="copyContainer">
+                <button id="btnCopiar" type="button">Copiar</button>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="myInfo">
+                <p>Copyright <i class="fa-regular fa-copyright"></i> 2022 Alura - Oracle ONE Encriptador y Desencriptar.
+                    Designed by <a href="https://github.com/Groppoxx" target="_blank">
+                        <strong>Groppoxx(Iam Alvarez)</strong></a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
